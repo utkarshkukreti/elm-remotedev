@@ -4,6 +4,10 @@ This project contains code that allows you to intercept calls to your Elm App's
 `update` function and send the message and model to the
 [Redux DevTools Extension][redux-devtools-extension].
 
+## Demo
+
+![Demo GIF](https://cdn.rawgit.com/utkarshkukreti/83520da614940ef26b68e4f456b563c3/raw/d9130e1a09181dea9c655d107c3ff55aacb1b1a7/a.gif)
+
 ## Usage
 
 Running this requires a one line patch to the JS code of Elm's `elm-lang/core`
