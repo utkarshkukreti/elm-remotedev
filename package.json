@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "webpack --output-library ElmRemoteDev -p"
+  },
+  "dependencies": {
+    "remotedev": "^0.2.7",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
+  }
+}
