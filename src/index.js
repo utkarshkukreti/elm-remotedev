@@ -11,7 +11,7 @@ const toAction = msg => {
 };
 
 const toJs = model => {
-  if (typeof model === 'object') {
+  if (model && typeof model === 'object') {
     switch (model.ctor) {
       // Empty List.
       case '[]':
