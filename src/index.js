@@ -44,6 +44,24 @@ const toJs = model => {
         recur(model._0);
         return {$: 'Set', ...array};
       }
+      // Dict
+      case 'RBNode_elm_builtin': {
+        const array = [];
+        const recur = node => {
+          // Empty node.
+          if (node.ctor === 'RBEmpty_elm_builtin') {
+            return;
+          }
+          // Left child.
+          recur(node._3);
+          // Self.
+          array.push({key: toJs(node._1), value: toJs(node._2)});
+          // Right child.
+          recur(node._4);
+        };
+        recur(model);
+        return {$: 'Dict', ...array};
+      }
       // A record.
       default:
         // If a record only contains one field named '_0' and that field doesn't
