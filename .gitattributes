@@ -1,2 +1,2 @@
-dist/main.js -diff
+dist/*.js -diff
 yarn.lock -diff

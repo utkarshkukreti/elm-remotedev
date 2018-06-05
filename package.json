@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "webpack --output-library ElmRemoteDev -p"
+    "build": "webpack src/0.18.js --output dist/0.18.js --output-library ElmRemoteDev -p"
   },
   "dependencies": {
     "remotedev": "^0.2.7",
