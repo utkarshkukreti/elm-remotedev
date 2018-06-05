@@ -10,8 +10,10 @@ This project contains code that allows you to intercept calls to your Elm App's
 
 ## Usage
 
-Running this requires a one line patch to the JS code of Elm's `elm-lang/core`
-package. It has only been tested against version 5.1.1 of that package.
+### Elm 0.18 / elm-lang/core 5.x.x
+
+Running this with Elm 0.18 requires a one line patch to the JS code of Elm's
+`elm-lang/core` package.
 
 1.  Install the Redux DevTools extension for [Firefox][firefox-extension] or
     [Google Chrome][google-chrome-extension].
